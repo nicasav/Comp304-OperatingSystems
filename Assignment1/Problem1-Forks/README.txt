@@ -1,7 +1,7 @@
-#Fork and Process Hierarchy
+Fork and Process Hierarchy
 
 This set of programs demonstrates the use of the fork() system call to create child processes and build a process hierarchy.
-##Program 1: p1a.c
+Program 1: p1a.c
 
 The p1a.c program creates a process hierarchy with n child processes (specified on the command line as a single argument). When the program is run, it prints information about each process in the hierarchy, including its process ID, its parent process ID, and the depth of the process in the hierarchy.
 To compile and run the program, open a terminal window and navigate to the directory containing the p1a.c file. Then, type the following commands and press Enter:
@@ -9,14 +9,14 @@ gcc p1a.c -o p1a
 ./p1a n
 
 where n is the number of child processes to create.
-##Program 2: p1b.c
+Program 2: p1b.c
 
 The p1b.c program creates a child process and prints a message indicating whether the parent or child process was created. If the child process was successfully created, it immediately exits. If the parent process was created, it waits for 5 seconds before exiting.
 To compile and run the program, open a terminal window and navigate to the directory containing the p1b.c file. Then, type the following command and press Enter:
 gcc p1b.c -o p1b
 ./p1b
 
-###Example Output
+Example Output
 
 When you run the programs, you should see output similar to the following:
 p1a.c
